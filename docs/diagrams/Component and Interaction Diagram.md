@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "👤 Пользователь"
         U[Путешественник]
@@ -95,3 +96,4 @@ graph TB
     class GEO,MEDIA external
     class STAT,DOCK_AUTH,DOCK_US,DOCK_PS,DOCK_RS,DOCK_SS,VOL_ES deployment
     class ES,SS search
+```
