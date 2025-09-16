@@ -72,6 +72,14 @@
 
     ![Alt text](mockups/Create_Route.png)
 
+*   Страницу создания/редактирования места.
+
+    ![Alt text](mockups/Create_place.png)
+
+*   Страницу конкретного маршута.
+
+    ![Alt text](mockups/Route_page.png)
+
 
 ### 2.3 Характеристики пользователей
 
