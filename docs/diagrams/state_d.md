@@ -1,10 +1,8 @@
-# State Machine Diagrams
-
-## Authentication State Diagram
+## Авторизация, регистрация и восстановление пароля
 ![Authentication States](img/state1.png)
 
-## Search and Navigation State Diagram  
+## Поиск маршрутов, навигация и просмотр маршрута
 ![Search States](img/state2.png)
 
-## Content Creation State Diagram
+## Создание нового маршрута
 ![Content Creation States](img/state3.png)
