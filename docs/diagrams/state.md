@@ -13,6 +13,19 @@ sequenceDiagram
     participant DB as Database
     participant Email as EmailService
 
+    Note over Гость,Email: Основной поток: Вход в систему
+    Гость->>UI: Нажимает "Sign In"
+    UI->>UI: Показать форму входа
+    Гость->>UI: Вводит email и пароль
+    UI->>Auth: POST /login
+    Auth->>Service: authenticateUser()
+    Service->>DB: Проверить учетные данные
+    DB-->>Service: Данные пользователя
+    Service->>Auth: Успешная аутентификация
+    Auth->>UI: Установить сессию, перенаправить
+    UI->>Гость: Показать главный экран
+
+    Note over Гость,Email: Альтернативный поток: Регистрация
     Гость->>UI: Нажимает "Sign up here"
     UI->>UI: Показать окно регистрации
     
@@ -23,6 +36,7 @@ sequenceDiagram
     DB-->>Service: Email свободен
     Service->>DB: Сохранить пользователя
     Service->>Auth: Успешная регистрация
+    Auth->>UI: Автоматическая аутентификация
     Auth->>UI: Перенаправить на главную
     UI->>Гость: Показать главный экран
 
