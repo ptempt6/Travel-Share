@@ -2,7 +2,7 @@
 
 ## Диаграмма вариантов использования
 
-![Authentication States](img/usecase_img.png)
+![](img/usecase_img.png)
 
 ## Глоссарий
 
