@@ -2,7 +2,7 @@
 
 ## Диаграмма вариантов использования
 
-*Примечание: Диаграмма будет более детально создана в Visual Paradigm*
+![Authentication States](img/usecase_img.png)
 
 ## Глоссарий
 
